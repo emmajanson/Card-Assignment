@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlämningsuppgift</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            height: 50px;
+            padding: 15px;
+        }
+        .wrapper{
+            width: 100%;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            padding: 5px;
+        }
+        .card{
+            min-width: 21%;
+            min-height: 20vh;
+            margin: 2%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .answer-container{
+            min-width: 100%;
+            height: calc(100% - 50px);
+            padding: 10px;
+            border-top: 1px solid black;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: white;
+        }
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+    <div class="wrapper">
+        <div class="card">
+            <p>Uppgift 1:</p>
+            <div  class="answer-container" id="answer-one">              
+              <button onClick="taskOne()">Click me</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Uppgift 2:</p>
+            <div  class="answer-container">
+                <div id="answer-two">
+                    
+                </div>
+                <button onClick="taskTwo()">Click me</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Uppgift 3:</p>
+            <div class="answer-container" id="answer-three">
+                <button onClick="taskThree()">Click me</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Uppgift 4:</p>
+            <div class="answer-container" id="answer-four">
+                <button onClick="taskFour()">Click me</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Uppgift 5:</p>
+            <div class="answer-container" id="answer-five">
+                <button onClick="taskFive()">Click me</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Uppgift 6:</p>
+            <div class="answer-container" id="answer-six">
+                <button onClick="taskSix()">Click me</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Uppgift 7:</p>
+            <div class="answer-container" id="answer-seven">
+                <button onClick="taskSeven()">Click me</button>
+            </div>
+        </div>
+        <div class="card" id="card-eight">
+            <p>Uppgift 8:</p>
+            <div class="answer-container" id="answer-eight">
+                <button onClick="taskEight()">Click me</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Uppgift 9:</p>
+            <div class="answer-container" id="answer-nine">
+                <button onClick="taskNine()">Click me</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Uppgift 10:</p>
+            <div class="answer-container" id="answer-ten">
+                <button onClick="taskTen()">Click me</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./app.js"></script> 
+</body>
+</html>
